@@ -20,28 +20,30 @@
     </style> -->
   </head>
   <body class="container">
-    <form action="/" method="post">
-      <input
-        class="form-control"
-        type="text"
+   <form action="/" method="post">
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input   type="text"
         name="name"
-        id="name"
-        placeholder="Enter name"
-      />
-      <br />
-      <br />
-      <input
-        class="form-control"
-        type="text"
-        name="email"
-        id="email"
-        placeholder="Enter email"
-      />
-      <br />
-      <br />
+        id="name" class="form-control"  placeholder="name@example.com">
+</div>
 
-      <button class="btn btn-primary" type="submit">Submit Form</button>
+ <br />
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea   type="text"
+        name="email"
+        id="email" class="form-control" rows="3"></textarea>
+</div>
+ <br />
+   <button class="btn btn-primary" type="submit">Submit Form</button>
     </form>
+    
+    
+    
+     
+    
+    
 
     <hr />
     <ul>
