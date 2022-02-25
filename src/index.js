@@ -21,4 +21,4 @@ app.set('view engine', 'ejs');
 
 app.use("/",user);
 
-app.listen();
+app.listen(process.env.PORT);
