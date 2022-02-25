@@ -23,7 +23,7 @@
    <form class="" action="/" method="post">
   <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input   type="text"
+  <input required  type="text"
         name="name"
         id="name" class="form-control"  placeholder="name@example.com">
 </div>
@@ -31,9 +31,9 @@
  <br />
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea   type="text"
+  <textarea  required  type="text"
         name="email"
-        id="email" class="form-control" rows="3"></textarea>
+        id="email" class="form-control" rows="2"></textarea>
 </div>
  <br />
    <button class="btn btn-primary" type="submit">Submit Form</button>
@@ -55,7 +55,7 @@
       <li class="list-group-item">
         <h4><%= user.name %></h4>
         <h4><%= user.email %></h4>
-        <a class="btn btn-danger" href="/delete/<%= user._id %> "><%= user._id %> </a>
+        <a class="btn btn-danger" href="/delete/<%= user._id %> ">Delete : <%= user._id %> </a>
       </li>
       </ul>
       <% } %> <% } %>
